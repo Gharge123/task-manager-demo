@@ -1,0 +1,100 @@
+/* LeftCard.css */
+
+.left-card {
+    background-color: #F8F9FD;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Max width for the card */
+    margin: 0 auto; /* Center the card horizontally */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children horizontally */
+}
+
+.task-intro {
+    display: flex;
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center align content */
+    gap: 15px; /* Space between image and text */
+}
+
+.task-intro img {
+    width: 400px; /* Medium size for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Circular image */
+    object-fit: cover; /* Cover image properly */
+}
+
+.task-info {
+    text-align: center; /* Center text inside task-info */
+}
+
+.task-info h2 {
+    font-size: 1.5rem; /* Responsive font size for heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.task-info p {
+    font-size: 1rem; /* Responsive font size for paragraph */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.explore-btn {
+    background-color: #5468FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem; /* Responsive font size for the button */
+}
+
+.explore-btn:hover {
+    background-color: #4455E1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .left-card {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .task-intro img {
+        width: 100px; /* Adjust image size for medium screens */
+    }
+
+    .task-info h2 {
+        font-size: 1.25rem; /* Adjust font size for heading */
+    }
+
+    .task-info p {
+        font-size: 0.9rem; /* Adjust font size for paragraph */
+    }
+
+    .explore-btn {
+        font-size: 0.9rem; /* Adjust font size for button */
+        padding: 8px 16px; /* Adjust padding for button */
+    }
+}
+
+@media (max-width: 480px) {
+    .task-intro img {
+        width: 80px; /* Further adjust image size for small screens */
+    }
+
+    .task-info h2 {
+        font-size: 1rem; /* Further adjust font size for heading */
+    }
+
+    .task-info p {
+        font-size: 0.8rem; /* Further adjust font size for paragraph */
+    }
+
+    .explore-btn {
+        font-size: 0.8rem; /* Further adjust font size for button */
+        padding: 6px 12px; /* Further adjust padding for button */
+    }
+}
+
